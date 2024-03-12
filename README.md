@@ -25,11 +25,12 @@ Step 7:Loop through the rest of the observed sequence and calculate the rest of 
        the previous row of the alpha matrix and the corresponding row of the transition matrix.<br>
        
 Step 8:Calculate the probability of the observed sequence by summing the last row of the alpha matrix.<br>
+
 Step 9:Find the most likely sequence of hidden states by selecting the hidden state with the highest probability at each time step based on the alpha matrix.<br>
 
 
 ## Program:
-```
+```py
 import numpy as np
 
 transition_matrix=np.array([[0.7,0.3],[0.4,0.6]])
